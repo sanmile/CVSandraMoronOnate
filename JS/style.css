@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #0D54EA 100%);
     padding: 0;
     margin: 0;
     border: none;
@@ -20,7 +20,7 @@ a{
 
 .background.gradient {
     background: #50a3a2;
-    background: linear-gradient(to bottom right, #50a3a2 0%, #2eca7f 100%);
+    background: linear-gradient(to bottom right, #50a3a2 0%, #0D54EA 100%);
     position: fixed;
     overflow: hidden;
     top: 0;
@@ -149,7 +149,7 @@ input, textarea, button {
 
 input:focus, textarea:focus, button:focus {
     color: #171717;
-    border-bottom: 1px solid #2eca7f;
+    border-bottom: 1px solid #0D54EA;
 }
 
 .title{
@@ -170,7 +170,7 @@ input:focus, textarea:focus, button:focus {
     top: 0;
     width: 30px;
     height: 30px;
-    background: linear-gradient(135deg, rgba(46, 202, 127, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(156, 186, 249  , 0.4) 0%, rgba(156, 186, 249  , 0.01) 100%);
     z-index: -1;
     border-radius: 30px;
 }
@@ -261,7 +261,7 @@ header nav a .link{
 }
 
 header nav a:hover {
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 main{
@@ -341,7 +341,7 @@ main .profile{
     left: calc(50% - 78px);
     width: 134px;
     height: 134px;
-    background: linear-gradient(135deg, rgba(46, 202, 127, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+    background: linear-gradient(135deg, rgba(156, 186, 249  , 0.4) 0%, rgba(156, 186, 249  , 0.01) 100%);
     border-radius: 100%;
 }
 
@@ -355,7 +355,7 @@ main .profile{
 
 .profile-profession{
     font-size: 14px;
-    color: #2eca7f;
+    color: #0D54EA;
     line-height: 14px;
     font-weight: 400;
 }
@@ -368,7 +368,7 @@ main .profile{
 
 .profile-social a:hover{
     text-decoration: none;
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .profile-buttons{
@@ -403,7 +403,7 @@ main .profile{
 
 
 .profile-buttons a:hover{
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .profile-buttons a:first-child::before, .profile-buttons a:first-child::after{
@@ -482,8 +482,8 @@ main .profile{
     height: 60px;
     text-align: center;
     font-size: 32px;
-    color: #2eca7f;
-    background: linear-gradient(135deg, rgba(46, 202, 127, 0.4) 0%, rgba(46, 202, 127, 0.01) 100%);
+    color: #0D54EA;
+    background: linear-gradient(135deg, rgba(156, 186, 249, 0.4) 0%, rgba(156, 186, 249, 0.01) 100%);
     border-radius: 60px;
     display: flex;
     justify-content: center;
@@ -519,7 +519,7 @@ main .profile{
     vertical-align: middle;
     font-size: 12px;
     color: #171717;
-    background: rgba(46, 202, 127, 0.4);
+    background: rgba(156, 186, 249  , 0.4);
     font-weight: 300;
     border-radius: 2px;
 }
@@ -585,7 +585,7 @@ main .profile{
     height: 40px;
     text-align: center;
     font-size: 32px;
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .about-pricing a{
@@ -605,7 +605,7 @@ main .profile{
 }
 
 .about-pricing a:hover{
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .about-fun{
@@ -632,7 +632,7 @@ main .profile{
     height: 43px;
     text-align: center;
     font-size: 26px;
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .about-clients{
@@ -674,7 +674,7 @@ main .profile{
     width: 40px;
     height: 40px;
     font-size: 26px;
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .resume-line{
@@ -715,11 +715,11 @@ main .profile{
 }
 
 .resume-line .date.active{
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .resume-line .date.active::before{
-    background: #2eca7f;
+    background: #0D54EA;
 }
 
 .resume-line .name{
@@ -768,7 +768,7 @@ main .profile{
 }
 
 .resume-skills > div section > div > div > div{
-    background: #2eca7f;
+    background: #0D54EA;
     height: 4px;
 }
 
@@ -790,7 +790,7 @@ main .profile{
     width: 40px;
     height: 40px;
     font-size: 26px;
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 .works-header{
@@ -957,7 +957,7 @@ main .contact{
 }
 
 .contact-form button:hover {
-    color: #2eca7f;
+    color: #0D54EA;
 }
 
 @media only screen and (min-width: 540px){
@@ -968,7 +968,7 @@ main .contact{
 
 @media only screen and (min-width: 1040px) {
     .selected{
-        color: #2eca7f;
+        color: #0D54EA;
     }
     .page{
         position: absolute;
