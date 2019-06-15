@@ -337,8 +337,8 @@ main .profile{
 .profile-image::before{
     content: '';
     position: absolute;
-    top: -69px;
-    left: calc(50% - 78px);
+    top: -75px;
+    left: calc(50% - 67px);
     width: 134px;
     height: 134px;
     background: linear-gradient(135deg, rgba(156, 186, 249  , 0.4) 0%, rgba(156, 186, 249  , 0.01) 100%);
