@@ -3,21 +3,21 @@ data = {
     name:"juan"
 }
 
-fetch("https://randomuser.me/api/",{
-    method: "POST", // *GET, POST, PUT, DELETE, etc.
-    headers: {
-        "Content-Type": "application/json",
-        // "Content-Type": "application/x-www-form-urlencoded",
-    },
-    body: JSON.stringify(data), // body data type must match "Content-Type" header
-}).then((value) =>{
-    return value.json();
-}).then((value) => {
-    return value.results[0]
-}).then((value) => {
-    let nombre = document.getElementById("nombre");
-    nombre.innerHTML = value.name.title + " " + value.name.first + " " + value.name.last;
-})
+// fetch("https://randomuser.me/api/",{
+//     method: "POST", // *GET, POST, PUT, DELETE, etc.
+//     headers: {
+//         "Content-Type": "application/json",
+//         // "Content-Type": "application/x-www-form-urlencoded",
+//     },
+//     body: JSON.stringify(data), // body data type must match "Content-Type" header
+// }).then((value) =>{
+//     return value.json();
+// }).then((value) => {
+//     return value.results[0]
+// }).then((value) => {
+//     let nombre = document.getElementById("nombre");
+//     nombre.innerHTML = value.name.title + " " + value.name.first + " " + value.name.last;
+// })
 
 
 
@@ -29,6 +29,7 @@ let works = document.getElementById("works");
 let getWorks = document.getElementById("getWorks");
 let contact = document.getElementById("contact");
 let getContact = document.getElementById("getContact");
+let getContactMe = document.getElementById("getContactMe"); 
 
 function remove() {
     about.classList.remove('view');
@@ -39,6 +40,7 @@ function remove() {
     getWorks.classList.remove('selected');
     contact.classList.remove('view');
     getContact.classList.remove('selected');
+    getContactMe.classList.remove('selected');
 }
 
 getAbout.addEventListener('click', function (e) {
@@ -68,13 +70,11 @@ getWorks.addEventListener('click', function (e) {
 })
 
 getContact.addEventListener('click', function (e) {
-    if (window.innerWidth > 1040) {
-        e.preventDefault();
-        remove();
-        contact.classList.add('view');
-        getContact.classList.add('selected');
-    }
+    contactMe(e,getContact);
+})
 
+getContactMe.addEventListener('click', function (e) {
+    contactMe(e,getContactMe);
 })
 
 var email = document.getElementById("email");
@@ -90,4 +90,19 @@ email.addEventListener("input", function (event) {
 
 form.addEventListener("submit", function (event) {
     event.preventDefault();
+    
+    localStorage.setItem("fullName", document.getElementById("name").value);
+    localStorage.setItem("email", document.getElementById("email").value);
+    localStorage.setItem("message", document.getElementById("message").value);
+    console.log(localStorage.getItem("fullName"));
   });
+
+  function contactMe(e, contactMe)
+  {
+    if (window.innerWidth > 1040) {
+        e.preventDefault();
+        remove();
+        contact.classList.add('view');
+        contactMe.classList.add('selected');
+    }
+  }

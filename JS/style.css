@@ -459,7 +459,7 @@ main .profile{
    position: relative;
 }
 .about-services >div:after{
-    content: '';
+  
     position: absolute;
     left: 50%;
     top: 0;
@@ -469,8 +469,7 @@ main .profile{
 }
 
 .about-services article{
-    position: relative;
-    width: 50%;
+    position: relative;  
     text-align: left;
     padding: 15px 20px;
     box-sizing: border-box;
